@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG - Micael E June</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <h1>Ficha dos jogadores</h1>
+    <div class="dados">
+        <div>
+            <h2>Vida</h2>
+            <div>
+                <p id="currentHP">22</p><p id="maxHP">25</p>
+            </div>
+            <button >+1</button><button onclick="decreaseHP()">-1</button>
+            <input type="range" id="hpBar">
+        </div>
+        <div>
+            <h2>Sanidade</h2>
+            <p class="currentSanity">22</p><p class="maxSanity">100</p>
+            <button onclick="decreaseHP()">+1</button><button>-1</button>
+            <input type="range" id="hpSanity">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
